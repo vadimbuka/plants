@@ -4,7 +4,6 @@
     background-image: url($image-url);
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 25px 25px;
 }
 
 //-------------END MIXIN -----------------------//
@@ -33,6 +32,7 @@
         font-family: $primery-text-font;
         font-weight: 400;
         font-size: 12px;
+        margin-right: 10px;
 
         &::after {
             content: "";
