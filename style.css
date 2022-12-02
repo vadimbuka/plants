@@ -77,10 +77,12 @@
 .main-header-container .logo {
   height: 40px;
 }
-.main-header-container .call-button {
+.main-header-container .callus-menu {
+  display: flex;
+}
+.main-header-container .callus-menu .call-button {
   border: none;
   cursor: pointer;
-  display: inline-block;
   width: 40px;
   height: 34px;
   background-color: #00730C;
@@ -89,12 +91,12 @@
   background-repeat: no-repeat;
   background-position: center center;
 }
-.main-header-container .menu-button {
+.main-header-container .callus-menu .menu-button {
   border: none;
   cursor: pointer;
-  display: inline;
   width: 40px;
   height: 34px;
+  margin-left: 40px;
   background-color: transparent;
   background-image: url("img/Menu_1_.png");
   background-repeat: no-repeat;

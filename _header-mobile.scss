@@ -93,27 +93,30 @@
         height: 40px;
     }
 
+    .callus-menu {
 
-    .call-button {
-        border: none;
-        cursor: pointer;
-        display: inline-block;
+        display: flex;
 
-        width: 40px;
-        height: 34px;
-        background-color: #00730C;
-        border-radius: 10px;
-        @include backgroundImageCenter("img/phone-dialog.png");
-    }
+        .call-button {
+            border: none;
+            cursor: pointer;
 
-    .menu-button {
-        border: none;
-        cursor: pointer;
-        display: inline;
+            width: 40px;
+            height: 34px;
+            background-color: #00730C;
+            border-radius: 10px;
+            @include backgroundImageCenter("img/phone-dialog.png");
+        }
 
-        width: 40px;
-        height: 34px;
-        background-color: transparent;
-        @include backgroundImageCenter("img/Menu_1_.png");
+        .menu-button {
+            border: none;
+            cursor: pointer;
+
+            width: 40px;
+            height: 34px;
+            margin-left: 40px;
+            background-color: transparent;
+            @include backgroundImageCenter("img/Menu_1_.png");
+        }
     }
 }
