@@ -1,0 +1,20 @@
+@mixin backgrounImage25-25 ($image-url) {
+    height: 25px;
+    width: 25px;
+    background-image: url($image-url);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+@mixin flexBetweenNowrapCenter() {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin backgroundImageCenter($image-url) {
+        background-image: url($image-url);
+        background-repeat: no-repeat;
+        background-position: center center;
+}
