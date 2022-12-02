@@ -21,6 +21,10 @@
 
 //-------------END MIXIN -----------------------//
 
+.header {
+    width: 100%;
+}
+
 .big-contacts-container {
     background-color: $color-dark-green;
     color: #fff;
@@ -85,7 +89,6 @@
 .main-header-container {
     @include flexBetweenNowrapCenter();
     height: 55px;
-
     margin-right: 20px;
     margin-left: 15px;
 
