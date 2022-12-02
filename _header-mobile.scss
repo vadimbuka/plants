@@ -12,6 +12,13 @@
     justify-content: space-between;
     align-items: center;
 }
+
+@mixin backgroundImageCenter($image-url) {
+        background-image: url($image-url);
+        background-repeat: no-repeat;
+        background-position: center center;
+}
+
 //-------------END MIXIN -----------------------//
 
 .big-contacts-container {
@@ -84,5 +91,29 @@
 
     .logo {
         height: 40px;
+    }
+
+
+    .call-button {
+        border: none;
+        cursor: pointer;
+        display: inline-block;
+
+        width: 40px;
+        height: 34px;
+        background-color: #00730C;
+        border-radius: 10px;
+        @include backgroundImageCenter("img/phone-dialog.png");
+    }
+
+    .menu-button {
+        border: none;
+        cursor: pointer;
+        display: inline;
+
+        width: 40px;
+        height: 34px;
+        background-color: transparent;
+        @include backgroundImageCenter("img/Menu_1_.png");
     }
 }
