@@ -6,6 +6,12 @@
     background-position: center center;
 }
 
+@mixin flexBetweenNowrapCenter() {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
 //-------------END MIXIN -----------------------//
 
 .big-contacts-container {
@@ -16,10 +22,7 @@
 }
 
 .contacts-container {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
+    @include flexBetweenNowrapCenter();
     height: 55px;
 
     margin-right: 20px;
@@ -70,4 +73,16 @@
     }
 
 
+}
+
+.main-header-container {
+    @include flexBetweenNowrapCenter();
+    height: 55px;
+
+    margin-right: 20px;
+    margin-left: 15px;
+
+    .logo {
+        height: 40px;
+    }
 }
