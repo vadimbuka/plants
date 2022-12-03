@@ -11,9 +11,10 @@
     }
 
     .container {
+        position: relative;
         height: 466px;
         padding: 48px 15px 35px;
-        background: linear-gradient(39.89deg, rgba(0, 115, 12, 0.81) -22.86%, rgba(251, 246, 238, 0) 116.18%);;
+        background: linear-gradient(39.89deg, rgba(0, 115, 12, 0.81) -22.86%, rgba(251, 246, 238, 0) 116.18%);
 
         .text-information {
             
@@ -56,6 +57,7 @@
         }
 
         .button-container {
+            margin-bottom: 20.32px;
 
             button {
                 width: 303px;
@@ -69,7 +71,66 @@
                 border-radius: 5px;
             }
         }
+        
+        .link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 41.32px;
 
+            a {
+                @include primeryFont(14px, 600);
+                text-decoration: none;
+                color: #00730C;
+                margin-right: 12px;
+            }
+
+            .image {
+                width: 16px;
+                height: 12.65px;
+                @include backgroundImageCenter("img/arrow-right.png")
+            }
+        }
+
+        .benefits {
+            display: flex;
+            justify-content: flex-end;
+
+            .ben {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                width: 133px;
+                height: 32px;
+                padding-right: 10px;
+                padding-left: 10px;
+                margin-left: 12px;
+
+                background: linear-gradient(180deg, #FFF8F1 0%, #CBE5CE 100%);
+                border-radius: 32px;
+
+                .value {
+                    @include primeryFont(12px, 700);
+                    color: #212529;
+                }
+
+                .description {
+                    @include primeryFont(10px, 400);
+                    color: #212529;
+                }
+            }
+        }
+
+        .back-image {
+            width: 83px;
+            height: 118px;
+            position: absolute;
+            bottom: 15px;
+            left: -10px;
+
+            @include backgroundImageCenter("img/flower.png");
+        }
 
     }
 }
