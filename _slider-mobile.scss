@@ -12,10 +12,61 @@
 
     .container {
         height: 466px;
+        padding: 48px 15px 35px;
         background: linear-gradient(39.89deg, rgba(0, 115, 12, 0.81) -22.86%, rgba(251, 246, 238, 0) 116.18%);;
 
         .text-information {
-            margin: 48px 15px 35px;
+            
+            position: relative;
+            margin-bottom: 40px;
+     
+            .header-1 {
+                @include primeryFont(14px, 700);
+                color: #212529;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                margin-bottom: 10px;
+
+                .image {
+                    width: 24px;
+                    height: 20px;
+                    margin-right: 5px;
+
+                    @include backgroundImageCenter("img/leaves.png");
+                    background-size: 24px 20px;
+                }
+            }
+
+            .header-2 {
+                @include primeryFont(28px, 700);
+                color: #212529;
+                line-height: 38px;
+                margin-bottom: 15px;
+
+                span {
+                    color: #00730C;
+                }
+            }
+
+            > .text {
+                @include primeryFont(14px, 400);
+                line-height: 22px;
+            }
+        }
+
+        .button-container {
+
+            button {
+                width: 303px;
+                height: 44px;
+                background-color: #00730C;
+                @include primeryFont(16px, 700);
+                color: #FFFFFF;
+                margin: 0 auto;
+                display: block;
+                border: none;
+            }
         }
     }
 }

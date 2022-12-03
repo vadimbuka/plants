@@ -18,3 +18,9 @@
         background-repeat: no-repeat;
         background-position: center center;
 }
+
+@mixin primeryFont($size, $weight) {
+    font-family: $primery-text-font;
+    font-weight: $weight;
+    font-size: $size;
+}
