@@ -172,6 +172,7 @@
   margin: 0 auto;
   display: block;
   border: none;
+  border-radius: 5px;
 }
 
 * {
