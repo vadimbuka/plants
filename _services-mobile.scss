@@ -60,3 +60,43 @@
         }
     }
 }
+
+.photo-services {
+    padding-right: 15px;
+    padding-left: 15px;
+
+    .pic-1 {
+        width: 188px;
+        height: 293px;
+        background-color: #00730C;
+        position: relative;
+
+        .pic-2 {
+            // width: 291px;
+            // height: 358px;
+            position: relative;
+            top: 12px;
+            left: 12px;
+    
+            > img {
+                width: 291px;
+                height: 358px;
+            }
+
+            .pic-3 {
+                position: absolute;
+                bottom: -88px;
+                left: 109px;
+    
+                > img {
+                    width: 241px;
+                    height: 162px;
+                    border: 9px solid #ffffff;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+
+
+}
