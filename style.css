@@ -86,6 +86,10 @@
 }
 .main-header-container .callus-menu {
   display: flex;
+  align-items: center;
+}
+.main-header-container .callus-menu .main-menu {
+  display: none;
 }
 .main-header-container .callus-menu .call-button {
   border: none;
@@ -97,6 +101,9 @@
   background-image: url("img/phone-dialog.png");
   background-repeat: no-repeat;
   background-position: center center;
+}
+.main-header-container .callus-menu .call-button span {
+  display: none;
 }
 .main-header-container .callus-menu .menu-button {
   border: none;
@@ -111,6 +118,9 @@
 }
 
 @media (min-width: 1900px) {
+  .big-contacts-container {
+    height: 59px;
+  }
   .big-contacts-container .contacts-container {
     width: 1400px;
     margin: 0 auto;
@@ -141,6 +151,63 @@
   }
   .big-contacts-container .contacts-container .contacts {
     width: 800px;
+  }
+  .main-header-container {
+    width: 1400px;
+    height: 85px;
+    margin: 0 auto;
+  }
+  .main-header-container .callus-menu {
+    flex-direction: row-reverse;
+  }
+  .main-header-container .callus-menu .menu-button {
+    display: none;
+  }
+  .main-header-container .callus-menu .call-button {
+    width: 170px;
+    height: 50px;
+    border-radius: 5px;
+    font-family: Nunito;
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+    background-position: 34px center;
+  }
+  .main-header-container .callus-menu .call-button span {
+    display: block;
+    padding-left: 10px;
+  }
+  .main-header-container .callus-menu .menu nav .main-menu {
+    display: flex;
+    padding-right: 100px;
+  }
+  .main-header-container .callus-menu .menu nav .main-menu li {
+    padding-right: 44px;
+  }
+  .main-header-container .callus-menu .menu nav .main-menu a {
+    display: block;
+    color: #212529;
+    font-family: Nunito;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    position: relative;
+  }
+  .main-header-container .callus-menu .menu nav .main-menu a.multi-menu::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 12px;
+    height: 7px;
+    background-image: url("img/down-arrow-black.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 12px 7px;
+    top: 6px;
+    right: -17px;
+  }
+  .main-header-container .callus-menu .menu nav .main-menu a:hover {
+    color: #00730C;
   }
 }
 * {
