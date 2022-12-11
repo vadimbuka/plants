@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Poppins&display=swap");
 .header {
   width: 100%;
 }
@@ -9,8 +10,7 @@
   width: 100%;
   height: 55px;
 }
-
-.contacts-container {
+.big-contacts-container .contacts-container {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
@@ -19,7 +19,10 @@
   margin-right: 20px;
   margin-left: 20px;
 }
-.contacts-container .language a {
+.big-contacts-container .contacts-container .desctop {
+  display: none;
+}
+.big-contacts-container .contacts-container .language a {
   text-decoration: none;
   color: #fff;
   position: relative;
@@ -28,7 +31,7 @@
   font-size: 12px;
   margin-right: 10px;
 }
-.contacts-container .language a::after {
+.big-contacts-container .contacts-container .language a::after {
   content: "";
   display: block;
   position: absolute;
@@ -41,27 +44,27 @@
   top: 6px;
   right: -10px;
 }
-.contacts-container .contacts {
+.big-contacts-container .contacts-container .contacts {
   width: 120px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.contacts-container .email {
+.big-contacts-container .contacts-container .email {
   height: 25px;
   width: 25px;
   background-image: url("img/email.png");
   background-repeat: no-repeat;
   background-position: center center;
 }
-.contacts-container .phone {
+.big-contacts-container .contacts-container .phone {
   height: 25px;
   width: 25px;
   background-image: url("img/phone.png");
   background-repeat: no-repeat;
   background-position: center center;
 }
-.contacts-container .location {
+.big-contacts-container .contacts-container .location {
   height: 25px;
   width: 25px;
   background-image: url("img/location.png");
@@ -69,265 +72,39 @@
   background-position: center center;
 }
 
-.main-header-container {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: center;
-  height: 55px;
-  margin-right: 20px;
-  margin-left: 15px;
+@media (min-width: 1900px) {
+  .big-contacts-container .contacts-container {
+    width: 1400px;
+    margin: 0 auto;
+  }
+  .big-contacts-container .contacts-container .mobile {
+    display: none;
+  }
+  .big-contacts-container .contacts-container .desctop {
+    display: block;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .big-contacts-container .contacts-container .desctop a {
+    color: #fff;
+    font-family: Poppins;
+    font-weight: 400;
+    text-decoration: none;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .big-contacts-container .contacts-container .desctop a .value {
+    padding-right: 30px;
+    padding-left: 10px;
+  }
+  .big-contacts-container .contacts-container .contacts {
+    width: 800px;
+  }
 }
-.main-header-container .logo {
-  height: 40px;
-}
-.main-header-container .callus-menu {
-  display: flex;
-}
-.main-header-container .callus-menu .call-button {
-  border: none;
-  cursor: pointer;
-  width: 40px;
-  height: 34px;
-  background-color: #00730C;
-  border-radius: 10px;
-  background-image: url("img/phone-dialog.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-.main-header-container .callus-menu .menu-button {
-  border: none;
-  cursor: pointer;
-  width: 40px;
-  height: 34px;
-  margin-left: 40px;
-  background-color: transparent;
-  background-image: url("img/Menu_1_.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-.promo-info .slider {
-  width: 100%;
-  height: 240px;
-  overflow: hidden;
-}
-.promo-info .slider .image-slider {
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-.promo-info .container {
-  position: relative;
-  height: 466px;
-  padding: 48px 15px 35px;
-  background: linear-gradient(39.89deg, rgba(0, 115, 12, 0.81) -22.86%, rgba(251, 246, 238, 0) 116.18%);
-}
-.promo-info .container .text-information {
-  position: relative;
-  margin-bottom: 40px;
-}
-.promo-info .container .text-information .header-1 {
-  font-family: Nunito;
-  font-weight: 700;
-  font-size: 14px;
-  color: #212529;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  margin-bottom: 10px;
-}
-.promo-info .container .text-information .header-1 .image {
-  width: 24px;
-  height: 20px;
-  margin-right: 5px;
-  background-image: url("img/leaves.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 24px 20px;
-}
-.promo-info .container .text-information .header-2 {
-  font-family: Nunito;
-  font-weight: 700;
-  font-size: 28px;
-  color: #212529;
-  line-height: 38px;
-  margin-bottom: 15px;
-}
-.promo-info .container .text-information .header-2 span {
-  color: #00730C;
-}
-.promo-info .container .text-information > .text {
-  font-family: Nunito;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 22px;
-}
-.promo-info .container .button-container {
-  margin-bottom: 20.32px;
-}
-.promo-info .container .button-container button {
-  width: 303px;
-  height: 44px;
-  background-color: #00730C;
-  font-family: Nunito;
-  font-weight: 700;
-  font-size: 16px;
-  color: #FFFFFF;
-  margin: 0 auto;
-  display: block;
-  border: none;
-  border-radius: 5px;
-}
-.promo-info .container .link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 41.32px;
-}
-.promo-info .container .link a {
-  font-family: Nunito;
-  font-weight: 600;
-  font-size: 14px;
-  text-decoration: none;
-  color: #00730C;
-  margin-right: 12px;
-}
-.promo-info .container .link .image {
-  width: 16px;
-  height: 12.65px;
-  background-image: url("img/arrow-right.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-.promo-info .container .benefits {
-  display: flex;
-  justify-content: flex-end;
-}
-.promo-info .container .benefits .ben {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 133px;
-  height: 32px;
-  padding-right: 10px;
-  padding-left: 10px;
-  margin-left: 12px;
-  background: linear-gradient(180deg, #FFF8F1 0%, #CBE5CE 100%);
-  border-radius: 32px;
-}
-.promo-info .container .benefits .ben .value {
-  font-family: Nunito;
-  font-weight: 700;
-  font-size: 12px;
-  color: #212529;
-}
-.promo-info .container .benefits .ben .description {
-  font-family: Nunito;
-  font-weight: 400;
-  font-size: 10px;
-  color: #212529;
-}
-.promo-info .container .back-image {
-  width: 83px;
-  height: 130px;
-  position: absolute;
-  bottom: 15px;
-  left: -10px;
-  background-image: url("img/flower.png");
-  background-repeat: no-repeat;
-  background-position: center 5px;
-}
-
-.services {
-  padding: 50px 15.5px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-.services h2 {
-  font-family: Nunito;
-  font-weight: 700;
-  font-size: 28px;
-  color: #212529;
-  margin-bottom: 15px;
-}
-.services h2 span {
-  color: #00730C;
-}
-.services > p {
-  font-family: Nunito;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 22px;
-  color: #676767;
-  text-align: center;
-  margin-bottom: 10px;
-}
-.services .service {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: nowrap;
-  width: 345px;
-  height: 116px;
-  margin-top: 20px;
-  padding: 20px;
-  border-radius: 10px;
-  background: linear-gradient(172.29deg, #FFFFFF -10.79%, #FFFFFF 94.04%);
-  box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
-}
-.services .service .image {
-  margin-right: 20px;
-  width: 50px;
-  height: 50px;
-}
-.services .service .value h4 {
-  font-family: Nunito;
-  font-weight: 700;
-  font-size: 16px;
-  margin-bottom: 10px;
-}
-.services .service .value p {
-  font-family: Nunito;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 22px;
-  color: #676767;
-  text-align: justify;
-}
-
-.photo-services {
-  padding-right: 15px;
-  padding-left: 15px;
-}
-.photo-services .pic-1 {
-  width: 188px;
-  height: 293px;
-  background-color: #00730C;
-  position: relative;
-}
-.photo-services .pic-1 .pic-2 {
-  position: relative;
-  top: 12px;
-  left: 12px;
-}
-.photo-services .pic-1 .pic-2 > img {
-  width: 291px;
-  height: 358px;
-}
-.photo-services .pic-1 .pic-2 .pic-3 {
-  position: absolute;
-  bottom: -88px;
-  left: 109px;
-}
-.photo-services .pic-1 .pic-2 .pic-3 > img {
-  width: 241px;
-  height: 162px;
-  border: 9px solid #ffffff;
-  border-radius: 10px;
-}
-
 * {
   box-sizing: border-box;
 }/*# sourceMappingURL=style.css.map */
