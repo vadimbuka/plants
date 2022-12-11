@@ -72,6 +72,44 @@
   background-position: center center;
 }
 
+.main-header-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 55px;
+  margin-right: 20px;
+  margin-left: 15px;
+}
+.main-header-container .logo {
+  height: 40px;
+}
+.main-header-container .callus-menu {
+  display: flex;
+}
+.main-header-container .callus-menu .call-button {
+  border: none;
+  cursor: pointer;
+  width: 40px;
+  height: 34px;
+  background-color: #00730C;
+  border-radius: 10px;
+  background-image: url("img/phone-dialog.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.main-header-container .callus-menu .menu-button {
+  border: none;
+  cursor: pointer;
+  width: 40px;
+  height: 34px;
+  margin-left: 40px;
+  background-color: transparent;
+  background-image: url("img/Menu_1_.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
 @media (min-width: 1900px) {
   .big-contacts-container .contacts-container {
     width: 1400px;

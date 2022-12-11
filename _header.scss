@@ -65,6 +65,44 @@
     }
 }
 
+.main-header-container {
+    @include flexBetweenNowrapCenter();
+    height: 55px;
+    margin-right: 20px;
+    margin-left: 15px;
+
+    .logo {
+        height: 40px;
+    }
+
+    .callus-menu {
+
+        display: flex;
+
+        .call-button {
+            border: none;
+            cursor: pointer;
+
+            width: 40px;
+            height: 34px;
+            background-color: #00730C;
+            border-radius: 10px;
+            @include backgroundImageCenter("img/phone-dialog.png");
+        }
+
+        .menu-button {
+            border: none;
+            cursor: pointer;
+
+            width: 40px;
+            height: 34px;
+            margin-left: 40px;
+            background-color: transparent;
+            @include backgroundImageCenter("img/Menu_1_.png");
+        }
+    }
+}
+
 // ============ DESKTOP ============
 // =================================
 
