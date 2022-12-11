@@ -129,11 +129,6 @@
             width: 100%;
         }
     }
-
-    .container-small {
-
-    }
-    
 }
 
 //=============== DESKTOP ==============
@@ -141,20 +136,88 @@
 
 @media (min-width: 1900px) {
     .promo-info {
+        position: relative;
         height: 719px;
         background: linear-gradient(39.89deg, rgba(0, 115, 12, 0.81) -22.86%, rgba(251, 246, 238, 0) 116.18%);
         .container {
             width: $width-big-container;
             margin: 0 auto;
-            background: none;
-        }
-
-        .slider {
             
-            .image-slider {
-                width: 1013px;
-                height: 873px;            
+
+            .slider {
+                .image-slider {
+                    position: absolute;
+                    top: 46px;
+                    right: 0;
+                    width: 1013px;
+                    height: 673px;            
+                }
+            }
+
+            .container-small {
+                background: none;
+                width: 600px;
+                position: static;
+
+                .text-information {
+                    margin-top: 87px;
+
+                    .header-1 {
+                        @include primeryFont(16px, 700);
+                        line-height: 20px;
+                    }
+
+                    .header-2 {
+                        @include primeryFont(58px, 800);
+                        line-height: 79.11px;
+                    }
+
+                    > .text {
+                        @include primeryFont(18px, 400);
+                        color: $primery-text-color;
+                        line-height: 30px;
+                    }
+                }
+                .btns {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    .button-container {
+                        margin-right: 30px;
+                        margin-bottom: 0;
+                        button {
+                            width: 175px;
+                            height: 50px;
+                            @include primeryFont(18px, 700);
+                        }
+                    }
+
+                    .link {
+                        margin: 0;
+                        a {
+                            @include primeryFont(18px, 600);
+                            color: $primery-text-color;
+                        }
+                    }
+                }
+                .benefits {
+                    display: none;
+                }
+                .back-image {
+                    width: 197px;
+                    height: 278px;
+                    position: absolute;
+                    bottom: 60px;
+                    left: 0;
+    
+                    background-image: url("img/man.png");
+                    background-repeat: no-repeat;
+                    background-position: center 5px;
+                    background-size: 197px 278px;
+                }
+                
             }
         }
+
     }
 }
