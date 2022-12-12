@@ -1,0 +1,124 @@
+.services {
+    padding: 50px 15.5px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    h2 {
+        @include primeryFont(28px, 700);
+        color: $primery-header-color;
+        margin-bottom: 15px;
+
+        span {
+            color: #00730C;
+        }
+    }
+
+    > p {
+        @include primeryFont(14px, 400);
+        line-height: 22px;
+        color: $primery-text-color;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .services-list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .service {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+        width: 345px;
+        height: 116px;
+        margin-top: 20px;
+        padding: 20px;
+        border-radius: 10px;
+        background: linear-gradient(172.29deg, #FFFFFF -10.79%, #FFFFFF 94.04%);
+        box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+
+        .image {
+            margin-right: 20px;
+            width: 50px;
+            height: 50px;
+        }
+
+        .value {
+            
+            h4 {
+                @include primeryFont(16px, 700);
+                margin-bottom: 10px;
+            }
+
+            p {
+                @include primeryFont(14px, 400);
+                line-height: 22px;
+                color: $primery-text-color;
+                text-align: justify;
+            }
+        }
+    }
+}
+
+//================ DESKTOP ================
+//=========================================
+
+@media (min-width: 1900px) {
+
+    .services {
+        width: $width-big-container;
+        margin: 0 auto;
+
+        h2 {
+            @include primeryFont(45px, 800);
+        }
+
+        > p {
+            width: 1136px;  
+            @include primeryFont(18px, 400);
+        }
+
+        .services-list {
+            justify-content: space-between;
+        }
+
+        .service {
+            flex-direction: column;
+            justify-content: flex-start;
+            width: 330px;
+            height: 366px;
+            padding: 0;
+        
+            img {
+                margin-top: 60px;
+                margin-right: 0;
+                width: 70px;
+                height: 70px;
+            }
+
+            .value {
+
+                h4 {
+                    @include primeryFont(24px, 700);
+                    margin-top: 140px;
+                    margin-bottom: 10px;
+                    text-align: center;
+                }
+    
+                p {
+                    @include primeryFont(16px, 400);
+                    line-height: 28px;
+                    text-align: center;
+                    margin-right: 44px;
+                    margin-left: 44px;
+                }
+            }
+        }
+    }
+}
